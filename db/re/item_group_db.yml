@@ -31605,3 +31605,19 @@ Body:
             Rate: 360
           - Item: Critical_Stone_Bottom
             Rate: 360
+  - Group: KACHUA_SECRET_BOX
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Cachua_Coupon
+      - SubGroup: 1
+        List:
+          - Item: Red_Potion
+            Rate: 4
+          - Item: Yellow_Potion
+            Rate: 3
+          - Item: White_Potion
+            Rate: 2
+          - Item: Blue_Potion
+            Rate: 1
+            Announced: true

@@ -48933,7 +48933,7 @@ Body:
   - Id: 23919
     AegisName: K_Secret_Key
     Name: Kachua's Secret Key
-    Type: Usable
+    Type: Delayconsume
     Trade:
       NoDrop: true
       NoTrade: true
@@ -48943,7 +48943,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      /* callfunc "F_Kachua_Key"; */
+      duplicate_dynamic("Kachua's Secret Box#bm");
   - Id: 23926
     AegisName: Shadow_9_Refine_Hammer
     Name: Shadow 9 Refine Hammer

@@ -5825,6 +5825,7 @@
 	export_constant(IG_S_ABSORB_SHIELD);
 	export_constant(IG_PORINGSPRECIOUSBOX);
 	export_constant(IG_ENCHANT_STONE_BOX29);
+	export_constant(IG_KACHUA_SECRET_BOX);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

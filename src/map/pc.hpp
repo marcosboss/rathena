@@ -63,6 +63,8 @@ enum sc_type : int16;
 #define ATTENDANCE_DATE_VAR "#AttendanceDate"
 #define ATTENDANCE_COUNT_VAR "#AttendanceCounter"
 #define ACHIEVEMENTLEVEL "AchievementLevel"
+#define GOLDPC_POINT_VAR "Goldpc_Points"
+#define GOLDPC_SECONDS_VAR "Goldpc_Seconds"
 
 //Total number of classes (for data storage)
 #define CLASS_COUNT (JOB_MAX - JOB_NOVICE_HIGH + JOB_MAX_BASIC)
@@ -934,6 +936,7 @@ struct map_session_data {
 
 	// The last item the player used before getgroupitem script command is called. Used in broadcast packet only
 	t_itemid opened_box_id;
+	int goldpc_tid;
 };
 
 extern struct eri *pc_sc_display_ers; /// Player's SC display table
@@ -1710,5 +1713,7 @@ void pc_macro_detector_disconnect(map_session_data &sd);
 // Macro Reporter
 void pc_macro_reporter_area_select(map_session_data &sd, const int16 x, const int16 y, const int8 radius);
 void pc_macro_reporter_process(map_session_data &ssd, map_session_data &tsd);
+
+TIMER_FUNC(pc_goldpc_update);
 
 #endif /* PC_HPP */
